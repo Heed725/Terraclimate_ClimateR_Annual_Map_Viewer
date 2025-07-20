@@ -28,7 +28,7 @@ The app fetches TerraClimate data dynamically based on the selected location and
 
 ## 🙏 Acknowledgements
 
-- Huge thanks to [@mikejohnson51](https://github.com/mikejohnson51) for leading the development of the [`climateR`](https://github.com/earthlab/climateR) package.
+- Huge thanks to [@mikejohnson51](https://github.com/mikejohnson51) as creator of [`climateR`](https://github.com/earthlab/climateR) package.
 - TerraClimate data courtesy of the [University of Idaho](https://www.climatologylab.org/terraclimate.html).
 - The app was inspired by open climate data and geospatial tool accessibility for broader climate analysis and education.
 
