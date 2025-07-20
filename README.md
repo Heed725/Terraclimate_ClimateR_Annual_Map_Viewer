@@ -1,36 +1,39 @@
 # Terraclimate Viewer 🌍
 
-A simple Shiny web application for exploring TerraClimate data for any location globally, built using the [`climateR`](https://github.com/earthlab/climateR) package.
+A Shiny web application for exploring TerraClimate data across the globe using a map-based interface and on-the-fly climate visualizations.
 
 🌐 **Live App**: [Terraclimate Viewer](https://hemedlungo.shinyapps.io/Terraclimate_Viewer/)
 
 ## 🔍 Overview
 
-This interactive tool allows users to:
-- Visualize TerraClimate variables (e.g., temperature, precipitation)
-- Select locations on a map
-- Generate time series charts
-- Export plots and summaries
+This app allows users to:
+- Interactively select any location in the world
+- Retrieve TerraClimate data dynamically from the cloud
+- Visualize climate variables over time (e.g., temperature, precipitation)
+- Download and export charts and data summaries
 
-The app utilizes real-time access to TerraClimate data through the `climateR` package.
+The app accesses cloud-optimized geospatial data using the `climateR` package, providing real-time TerraClimate data access through STAC endpoints.
 
-## 📦 Built With
+## 📦 Packages Used
 
-- [**Shiny**](https://shiny.posit.co/) – R package for interactive web apps
-- [**climateR**](https://github.com/earthlab/climateR) – For querying and retrieving TerraClimate data
-- [**leaflet**](https://rstudio.github.io/leaflet/) – Interactive mapping
-- [**ggplot2**](https://ggplot2.tidyverse.org/) – Visualization
-- [**dplyr**](https://dplyr.tidyverse.org/) – Data wrangling
+The app was built using the following R packages:
 
-## 🧠 How It Works
-
-The app fetches TerraClimate data dynamically based on the selected location and time range. Users can interact with the map to choose a point and generate plots showing trends for selected climate variables.
+- [`shiny`](https://shiny.posit.co/) – Web application framework for R
+- [`terra`](https://rspatial.org/terra/) – Spatial data processing
+- [`ggplot2`](https://ggplot2.tidyverse.org/) – Data visualization
+- [`tidyterra`](https://dieghernan.github.io/tidyterra/) – Tidy methods for terra objects
+- [`climateR`](https://github.com/earthlab/climateR) – Climate data access via STAC APIs
+- [`AOI`](https://github.com/mikejohnson51/AOI) – Area-of-interest selection tools
+- [`sf`](https://r-spatial.github.io/sf/) – Simple features for spatial vector data
+- [`shinycssloaders`](https://github.com/andrewsali/shinycssloaders) – Loaders for Shiny outputs
+- [`colorspace`](https://colorspace.r-forge.r-project.org/) – Advanced color palettes
+- [`rnaturalearth`](https://github.com/ropensci/rnaturalearth) – Country and coastline shapefiles
+- [`rnaturalearthdata`](https://github.com/ropensci/rnaturalearthdata) – Base data for `rnaturalearth`
 
 ## 🙏 Acknowledgements
 
-- Huge thanks to [@mikejohnson51](https://github.com/mikejohnson51) as creator of [`climateR`](https://github.com/earthlab/climateR) package.
-- TerraClimate data courtesy of the [University of Idaho](https://www.climatologylab.org/terraclimate.html).
-- The app was inspired by open climate data and geospatial tool accessibility for broader climate analysis and education.
+- Special thanks to [@mikejohnson51](https://github.com/mikejohnson51) for his work on the [`climateR`](https://github.com/earthlab/climateR) and [`AOI`](https://github.com/mikejohnson51/AOI) packages, which power the core data functionality in this app.
+- TerraClimate data provided by the [University of Idaho Climatology Lab](https://www.climatologylab.org/terraclimate.html).
 
 
 ---
